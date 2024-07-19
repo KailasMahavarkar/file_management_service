@@ -2,11 +2,6 @@
 
 This frontend application provides an interface to list and interact with files in an Amazon S3 bucket. It uses the [s3 backend service](https://github.com/KailasMahavarkar/file_service) to fetch the files from s3 bucket.
 
-Improvements made over vanilla s3 api:
-- instead of object, we are listing objects as either files or folder (which is what we see in file explorer).
-- signed url for download and view file content.
-- URL caching
-- Pagination
 
 
 ## Getting Started
