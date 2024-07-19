@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 
 const FileNavbar = () => {
 
-    const { path, setPath, showUploadModal, 
+    const { path, setPath, showUploadModal,
         showInfoDropdown,
         setShowInfoDropdown,
         fileUploaderModalRef,
@@ -64,7 +64,7 @@ const FileNavbar = () => {
                         </div>
                     )
                 }
-{/* 
+                {/* 
                 <div className="btn btn-secondary btn-sm "
                     onClick={() => {
                         setShowInfoDropdown(!showInfoDropdown)
