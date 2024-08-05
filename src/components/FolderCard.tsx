@@ -25,7 +25,7 @@ const FolderCard = ({ folder }: { folder: singleFileMetaType }) => {
             {
                 <>
                     <img
-                        src={folder.downloadLink || "https://placehold.co/300x200"}
+                        src={folder.downloadLink || `https://placehold.co/300x200?text=${folder.filename}`}
                         style={{
                             maxWidth: "300px",
                         }}
@@ -39,9 +39,6 @@ const FolderCard = ({ folder }: { folder: singleFileMetaType }) => {
                 </>
             }
 
-            <div>
-                {folder.filename}
-            </div>
             <div className="absolute top-2 right-2 ">
                 <div className="flex gap-2">
                     {

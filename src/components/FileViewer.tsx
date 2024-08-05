@@ -6,10 +6,14 @@ const FileViewer = () => {
         fileViewerModalRef
     } = useContext(MediaContext);
 
+    const downloadLink = ((fileViewerModalRef?.current as any)?.file as any)?.downloadLink;
+
+    console.log(fileViewerModalRef);
+
     return (
         <figure className="relative ">
             <img
-                src={fileViewerModalRef ? ((fileViewerModalRef?.current as any)?.file as any)?.downloadLink : "https://placehold.co/300x200"}
+                src={fileViewerModalRef ? downloadLink : `https://placehold.co/300x200?text=${0}`}
                 alt="Shoes"
                 className="w-[300px] h-[200px] object-scale-down "
                 style={{
